@@ -1,0 +1,80 @@
+<html>
+<head>
+<style>
+    .transparent-style{
+    background-color: #ffffff;    opacity: .4;
+
+}
+a:link{
+color:green;
+background-color:transparent;
+text-decoration:none;
+}
+a:visited{
+color:black;
+background-color:transparent;
+text-decoration: none;
+}
+a:hover{
+color:red;
+background-color:transparent;
+text-decoration: underline;
+}
+a:active{
+color:yellow;
+background-color:transparent;
+text-decoration:underline;
+}
+<br>
+<a href="https://www.rajagiri.edu">Rajagiri<a/>
+</style>
+<link rel="stylesheet" href="loginstyle.css">
+<title>sign up</title>
+<script type="text/javascript">
+function check()
+{
+var v1=document.frm1.tx1.value;
+var v2=document.frm1.tx2.value;
+var v3=document.frm1.tx3.value;
+var v4=document.frm1.tx4.value;
+var pn1=/^[A-Z a-z]+$/;
+if(!(v1.match(pn1)))
+{
+alert("Invalid data in username:);
+return false;
+}
+else if((v2.localcompare(v3)))
+{
+alert("Password and confirm should be same");
+return false;
+}
+</script>
+</head>
+<body>
+<form action="signup.php" method="POST" name=frm1" onsubmit="return check();">
+<table cellpadding="10" width="50%" bgcolor="#ffffff" opacity: .4;  align="center"
+cellspacing="2">
+<tr>
+<td colspan=2>
+<center><img src="har.jfif" width="100" height="100"></center>
+<center><font size=4><b>LOGIN PAGE</b></font></center>
+</td>
+</tr>
+
+<tr>
+<td>User ID</td>
+<td><input type="text" name="tx1"required></td></tr><br><br>
+<tr>
+<td>Password</td><td><input type="password" name="tx2"required></td></tr><br><br>
+<tr>
+<td>Confirm Password</td><td><input type="password" name="tx3"required></td></tr><br><br>
+<tr>
+<td>Email ID</td><td><input type="email" name="tx4"required></td></tr><br><br>
+<td><input type="submit"></td><td colspan="2"><name="submit" value="sign up"><br><br>
+<p>Already Registred<a href="login2.html">Sign in</a></p>
+</table>
+</form>
+</center>
+                                         <button onclick="window.location.href='university.html'"><b>HOME</b></button>
+</body>
+</html>

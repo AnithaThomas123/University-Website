@@ -1,0 +1,17 @@
+
+
+body
+{
+background-image:
+url("camp.jpg");
+  height: 640px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+    h2{color:transparent}
+address {color:transparent}
+
+.transparent-style{
+    background-color: #ffffff;    opacity: .4;
+
+}

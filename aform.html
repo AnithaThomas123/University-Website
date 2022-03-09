@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>application form</title>
+<link rel="stylesheet" href="regstyle.css">
+</head>
+<body>
+<address>
+<center><b>HARVARD UNIVERSITY, USA</b><br>
+Affiliated arts and science colleges(2020-2021)Through<br>
+Centeralized Allotment process</center>
+</address>
+<br><br>
+*fill the form in BLOCK LETTERS<br><br>
+<form method="POST" action="aform.php">
+<fieldset>
+<label>PERSONAL DETAILES OF APPLICANT</label><br><br>
+<label>Name of Applicant:<input type="text" name="name"></label><br><br>
+<label>Name of Father/Guardian:<input type="text" name="fname"></label><br><br>
+<label>Gender*:<input type="radio" name="gender" value="male">MALE
+<input type="radio" name="gender" value="female">FEMALE
+<input type="radio" name="gender" value="others">OTHERS
+</label><br><br>
+<label>Date of Birth*<input type="date" name="dob"></label><br><br>
+<label>Nationality*:<input type="text" name="nationality"></label><br><br>
+<label>Annual Income*:<input type="text" name="income"></label><br><br>
+<label>Relegion*:<input type="text" name="relegion"></label><br><br>
+<label>Cast*:<input type="text" name="cast"></label><br><br>
+<label>Community*:<input type="text" name="community"></label><br><br>
+</fieldset><br><br>
+<fieldset>
+<label>ADDRESS FOR COMMUNICATION</label><br><br>
+<label>House Name/No*:<input type="text" name="hname"></label><br><br>
+<label>Place*:<input type="text" name="place"></label><br><br>
+<label>District*:<input type="text" name="district"></label><br><br>
+<label>state*:<input type="text" name="state"></label><br><br>
+<label>Pincode*:<input type="text" name="pincode"></label><br><br>
+<label>Phone No*:<input type="text" name="phone"></label><br><br>
+<label>Email ID(if any):<input type="email" name="mail"></label><br><br>
+</fieldset><br><br>
+<fieldset>
+<label>DETAILES OF QUALIFYING EXAMINATION</label><br><br>
+<label>Qualifying Examination:<input type="text" name="exam"></label><br><br>
+<label>Name of University:<select name="uname">
+<option value="mg">MG University</option>
+<option value="kerala">Kerala University</option>
+</select></label><br><br>
+<label>Year of Passing*:<input type="text" name="year"></label><br><br>
+<label>Number of chances Availed*:<input type="text" name="chances"</label><br><br>
+<label>Stream or Group of Study*:<input type="text" name="stream"</label><br><br>
+</fieldset><br><br>
+<fieldse>
+<label>WEIGHTAGE IF ANY</label><br><br>
+<label>Whether holder of NCC or NSS certificate at Degree/Equivalent level:<input type="text" name="ncc" value="NOT APPLICABLE"></label><br><br>
+</fieldset><br><br>
+<fieldset>
+<label>DETAILES OF MARK SECURED</label>
+<label>Percentage*:<input type="text" name="mark"></label><br><br>
+</fieldset><br><br>
+<input type="submit" name="submit" value="submit">
+<input type="reset" name="reset" value="reset">
+</form>
+    <script src="js/custom.js"></script>
+</body>
+
+<script type="text/javascript">
+                                    var letters = /^[a-z A-Z]+$/;
+                                    var numbers = /^[0-9]+$/;
+                                    function check()
+                                    {
+                                        if (!document.getElementById("snm").value.match(letters))
+                                        {
+
+                                            alert('Please input characters only,enter name');
+                                            return false;
+                                        }
+                                        else if (!document.getElementById("spin").value.match(numbers))
+                                        {
+
+                                            alert('Please input numeric characters only,enter  pincode');
+                                            return false;
+                                        }
+                                        else if (document.getElementById("spin").value.length < 6)
+                                        {
+
+                                            alert('Please input valid  pincode');
+                                            return false;
+                                        }
+
+                                        else if (!document.getElementById("sphn").value.match(numbers))
+                                        {
+
+                                            alert('Please input numeric characters only,enter  phone no');
+                                            return false;
+                                        }
+
+                                        else if (document.getElementById("sphn").value.length < 10)
+                                        {
+
+                                            alert('Please input valid phone no');
+                                            return false;
+                                        }
+                                        else if (document.getElementById("pass").value.length < 8)
+                                        {
+                                            alert('enter password with minimim length of 8 characters');
+                                            return false;
+                                        }
+                                        else
+                                        {
+                                            return true;
+                                        }
+                                    }
+
+
+</script>
+</html>
+

@@ -1,0 +1,89 @@
+<html>
+    <link rel="stylesheet" href="revstyle.css">
+<div class="contact-us">
+<body>
+<form action="signup.php" method="POST" name=frm1" onsubmit="return check();">
+<table cellpadding="10" width="50%" bgcolor="#ffffff" opacity: .4;  align="center"
+cellspacing="2">
+<tr>
+<td colspan=2>
+<center><img src="har.jfif" width="100" height="100"></center>
+<center><font size=4><b>STUDENT REGISTRATION</b></font></center>
+</td>
+</tr>
+                    
+                                    <ul>
+                                         <tr><th> <b>Name</b></th><td><input type="text" name="snm" id="snm"></td></tr></li>
+                                         <tr><th><b>House Name</b></th><td><input type="text" name="shn" ></td></tr></li>
+                                         <tr><th> <b>Place</b></th><td><input type="text" name="sp" ></td></tr></li>
+                                         <tr><th> <b>District</b></th><td><input type="text" name="sdir" id="sdir"></td></tr>
+                                         <tr><th> <b>Pin Code</b></th><td><input type="text" name="spin" id="spin"></td></tr>
+                                         <tr><th> <b><label>Gender*:</b></th><td><input type="radio" name="gender" value="male">MALE
+<input type="radio" name="gender" value="female">FEMALE
+<input type="radio" name="gender" value="others">OTHERS
+                                        <tr><th> <b><br/>Date of Birth</b></th><td><input type="date" name="sdob" id="sdob"></td></tr>
+                                          <tr><th> <b>Phone Number</b></th><td><input type="text" name="sphn" id="sphn" maxlength="10" required/></td></tr>
+                                          <tr><th> <b>Email ID</b></th><td><input type="email" name="mail" id="mail"></td></tr>
+                                          <tr><th> <b>Password</b></th><td><input type="text" name="pass" id="pass"></td></tr>
+                                        <tr><th></th><td><input style="background: #d8302f;color:white" type="submit" value="REGISTER"/></td></tr>
+                                        </table>
+                                    </ul>
+                            </div>
+                        </div>
+
+                          </form>
+</body>
+
+<script type="text/javascript">
+                                    var letters = /^[a-z A-Z]+$/;
+                                    var numbers = /^[0-9]+$/;
+                                    function check()
+                                    {
+                                        if (!document.getElementById("snm").value.match(letters))
+                                        {
+
+                                            alert('Please input characters only,enter name');
+                                            return false;
+                                        }
+                                        else if (!document.getElementById("spin").value.match(numbers))
+                                        {
+
+                                            alert('Please input numeric characters only,enter  pincode');
+                                            return false;
+                                        }
+                                        else if (document.getElementById("spin").value.length < 6)
+                                        {
+
+                                            alert('Please input valid  pincode');
+                                            return false;
+                                        }
+
+                                        else if (!document.getElementById("sphn").value.match(numbers))
+                                        {
+
+                                            alert('Please input numeric characters only,enter  phone no');
+                                            return false;
+                                        }
+
+                                        else if (document.getElementById("sphn").value.length < 10)
+                                        {
+
+                                            alert('Please input valid phone no');
+                                            return false;
+                                        }
+                                        else if (document.getElementById("pass").value.length < 8)
+                                        {
+                                            alert('enter password with minimum length of 8 characters');
+                                            return false;
+                                        }
+                                        else
+                                        {
+                                            return true;
+                                        }
+                                    }
+
+
+</script>
+
+<tr><th></th><td><button onclick="window.location.href='university.html'" input style="background: #d8302f;color:white"><b>HOME</b></button></td></tr>
+</html>
